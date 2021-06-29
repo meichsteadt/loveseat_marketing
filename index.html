@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LoveSeat</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    <script src="scripts.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico' />
+    <link rel="stylesheet" href="./stylesheets/screen.css">
+  </head>
+  <body>
+
+<!-- ===============================   Navbar  =============================== -->
+    <nav class="white black-text text-darken-2">
+      <div class="container">
+        <div class="nav-wrapper">
+            <a href="/" class="brand-logo">
+              <img src="./loveseat.png" class="logo" alt="">
+
+              LoveSeat
+            </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#product">Product</a></li>
+            <li><a href="#beta">Beta Program</a></li>
+            <li><a href="#about-us">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#product">Product</a></li>
+      <li><a href="#beta">Beta Program</a></li>
+      <li><a href="#about-us">About Us</a></li>
+    </ul>
+
+<!-- ===============================   Main Content  =============================== -->
+    <main>
+
+      <!-- ===============================   Splash  =============================== -->
+      <section id="splash">
+        <div class="bg"></div>
+
+        <div class="container">
+          <div class="row valign-wrapper">
+            <div class="col m12 l4">
+              <h1>Built to make furniture stores better.</h1>
+              <h3>We're building software so independent furniture store owners can save time and grow their business</h3>
+
+              <a href="#beta"><button class='btn btn-large primary-color'>Join Our Beta Program!</button></a>
+
+            </div>
+
+            <div class="col m12 l8 demo-img hide-on-med-and-down">
+              <div class="img-wrapper">
+                <img src="./demo.png" alt="" class="card">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===============================  End Splash  =============================== -->
+
+      <!-- ===============================   Product  =============================== -->
+      <section id="product" class="valign-wrapper">
+        <div class="container">
+          <h1>What we're building</h1>
+          <hr>
+          <div class="row valign-wrapper">
+            <div class="col m12 l6 center-align hide-on-med-and-down">
+              <img src="./product_info.png" alt="" class="responsive-img">
+            </div>
+            <div class="col m12 l6">
+              <div class="col s12">
+                <div class="card">
+                  <div class="card-content">
+                    <span class="card-title">Point of Sale <span class="material-icons">point_of_sale</span></span>
+                    <hr>
+                    <p>Cloud software to use from your desktop; manage orders, print invoices, track customers and sales</p>
+                  </div>
+                  <div class="card-action">
+                  </div>
+                </div>
+              </div>
+              <div class="col s12">
+                <div class="card">
+                  <div class="card-content">
+                    <span class="card-title">Inventory Management <span class="material-icons">weekend</span></span>
+                    <hr>
+                    <p>No more running to the warehouse to check what's in stock! Sell in-stock items, or create purchase orders in seconds</p>
+                  </div>
+                  <div class="card-action">
+                  </div>
+                </div>
+              </div>
+              <div class="col s12">
+                <div class="card">
+                  <div class="card-content">
+                    <span class="card-title">E-commerce <span class="material-icons">shopping_cart</span></span>
+                    <hr>
+                    <p>Today's owners are expected to be experts in e-commerce, digital marketing, and a million other things. Let us handle the digital, and you can get back to running your store.</p>
+                    <br>
+                    <p>Since it's completely connected to the rest of your system it's a cinch to keep updated.</p>
+                  </div>
+                  <div class="card-action">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- End container -->
+      </section>
+      <!-- ===============================  End Product  =============================== -->
+
+      <!-- ===============================   Beta  =============================== -->
+      <section id="beta">
+        <div class="bg"></div>
+        <div class="container">
+          <div class="row valign-wrapper">
+            <div class="col m12 l6 offset-l3">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title">Join our Beta!</span>
+                  <hr>
+                  <p>The Beta version of LoveSeat is now live. We are seeking 4-5 more furniture stores to include in the Beta Trial. Trial participants receive access to a software solution designed specifically to save owner operators of furniture stores time and effort. In return, you will provide regular feedback to our team on your customer experience. Your feedback will inform the features and design of future versions of LoveSeat.</p>
+                </div>
+                <div class="card-action center-align">
+                  <a href="mailto:matt@loveseat.co?subject=Beta%20Signup&cc=fergal@loveseat.co&body=Hi!%20I'd%20like%20to%20sign%20up%20for%20your%20beta%20program.%20My%20name%20is%20YOUR%20NAME%20HERE%20and%20my%20store%20is%20called%20STORE%20NAME%20HERE%20located%20at%20STORE%20ADDRESS.%0A%0AYou%20can%20reach%20me%20at%20PHONE%20NUMBER%20HERE.%0A%0AThank%20you!" target="_blank"><button class='btn btn-large primary-color'>Sign up via Email!</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===============================  End Beta  =============================== -->
+
+
+      <!-- ===============================   About Us  =============================== -->
+      <section id="about-us">
+        <div class="container">
+          <h1>About Us</h1>
+          <hr>
+          <div class="row">
+            <div class="col m5 s12 center-align">
+              <img src="./matt.jpeg" alt="" class="responsive-img circle">
+              <h4>Matt</h4>
+              <p>
+                Having worked as a wholesales rep and later a web & application developer in the furniture industry, Matt understands just how stretched owner operators of these stores are for time and resources.
+              </p>
+            </div>
+            <div class="vl"></div>
+            <div class="col m5 offset-m2 s12 center-align">
+              <img src="./fergal.jpeg" alt="" class="responsive-img circle">
+              <h4>Fergal</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===============================  End Beta  =============================== -->
+    </main>
+  </body>
+</html>

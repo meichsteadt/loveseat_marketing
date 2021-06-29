@@ -1,0 +1,141 @@
+/* Welcome to Compass.
+ * In this aile you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+$primary-color: #0c2556;
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: 100vh;
+}
+
+
+.row {
+  flex-wrap: wrap;
+}
+
+.parallax-container {
+  height: 100vh;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  a {
+    color: #333 !important;
+  }
+
+  .logo {
+    height: 64px;
+    margin-right: 15px;
+    float: left;
+  }
+}
+
+#splash, #beta {
+  width: 100vw;
+  min-height: calc(100vh);
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .bg {
+    background-image: url("../splash2.jpg");
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(65%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -2;
+
+  }
+
+  h3 {
+    color: #a3a3a3;
+    font-size: 1.5em;
+  }
+
+  .demo-img {
+    // width: 66.66%;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+
+    .img-wrapper {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      padding: 20px;
+
+      img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+#beta {
+  color: #333;
+
+  .bg {
+    background-image: url("../store.jpeg");
+  }
+
+  .card {
+    .card-title {
+      font-size: 3em;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+  }
+}
+
+#about-us {
+  min-height: 0px;
+
+  .col {
+    padding: 20px;
+  }
+
+  .col:last-of-type {
+    // border-left: 1px solid rgba(0,0,0,0.87);
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  img {
+    width: 200px;
+  }
+}
+
+
+.primary-color {
+  background-color: $primary-color;
+
+  &:hover, &:active, &:focus {
+    background-color: lighten($primary-color, 10%);
+  }
+}

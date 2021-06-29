@@ -1,0 +1,139 @@
+/* Welcome to Compass.
+ * In this aile you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 7, ../sass/screen.scss */
+html {
+  scroll-behavior: smooth;
+}
+
+/* line 11, ../sass/screen.scss */
+section {
+  min-height: 100vh;
+}
+
+/* line 16, ../sass/screen.scss */
+.row {
+  flex-wrap: wrap;
+}
+
+/* line 20, ../sass/screen.scss */
+.parallax-container {
+  height: 100vh;
+}
+
+/* line 24, ../sass/screen.scss */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+/* line 29, ../sass/screen.scss */
+nav a {
+  color: #333 !important;
+}
+/* line 33, ../sass/screen.scss */
+nav .logo {
+  height: 64px;
+  margin-right: 15px;
+  float: left;
+}
+
+/* line 40, ../sass/screen.scss */
+#splash, #beta {
+  width: 100vw;
+  min-height: calc(100vh);
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* line 50, ../sass/screen.scss */
+#splash .container, #beta .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* line 57, ../sass/screen.scss */
+#splash .bg, #beta .bg {
+  background-image: url("../splash2.jpg");
+  background-size: cover;
+  background-position: center center;
+  filter: brightness(65%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  z-index: -2;
+}
+/* line 70, ../sass/screen.scss */
+#splash h3, #beta h3 {
+  color: #a3a3a3;
+  font-size: 1.5em;
+}
+/* line 75, ../sass/screen.scss */
+#splash .demo-img, #beta .demo-img {
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+/* line 81, ../sass/screen.scss */
+#splash .demo-img .img-wrapper, #beta .demo-img .img-wrapper {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+/* line 87, ../sass/screen.scss */
+#splash .demo-img .img-wrapper img, #beta .demo-img .img-wrapper img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 96, ../sass/screen.scss */
+#beta {
+  color: #333;
+}
+/* line 99, ../sass/screen.scss */
+#beta .bg {
+  background-image: url("../store.jpeg");
+}
+/* line 104, ../sass/screen.scss */
+#beta .card .card-title {
+  font-size: 3em;
+}
+/* line 108, ../sass/screen.scss */
+#beta .card p {
+  font-size: 1.2em;
+}
+
+/* line 114, ../sass/screen.scss */
+#about-us {
+  min-height: 0px;
+}
+/* line 117, ../sass/screen.scss */
+#about-us .col {
+  padding: 20px;
+}
+/* line 125, ../sass/screen.scss */
+#about-us p {
+  text-align: justify;
+}
+/* line 129, ../sass/screen.scss */
+#about-us img {
+  width: 200px;
+}
+
+/* line 135, ../sass/screen.scss */
+.primary-color {
+  background-color: #0c2556;
+}
+/* line 138, ../sass/screen.scss */
+.primary-color:hover, .primary-color:active, .primary-color:focus {
+  background-color: #123883;
+}
