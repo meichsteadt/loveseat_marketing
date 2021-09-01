@@ -128,13 +128,30 @@
             <div class="col m12 l6 offset-l3">
               <div class="card">
                 <div class="card-content">
-                  <span class="card-title">Join our Beta!</span>
+                  <span class="card-title">Reach out!</span>
                   <hr>
                   <p>The Beta version of LoveSeat is now live. We are seeking 4-5 more furniture stores to include in the Beta Trial. Trial participants receive access to a software solution designed specifically to save owner operators of furniture stores time and effort. In return, you will provide regular feedback to our team on your customer experience. Your feedback will inform the features and design of future versions of LoveSeat.</p>
                 </div>
-                <div class="card-action center-align">
-                  <a href="mailto:matt@loveseat.co?subject=Beta%20Signup&cc=fergal@loveseat.co&body=Hi!%20I'd%20like%20to%20sign%20up%20for%20your%20beta%20program.%20My%20name%20is%20YOUR%20NAME%20HERE%20and%20my%20store%20is%20called%20STORE%20NAME%20HERE%20located%20at%20STORE%20ADDRESS.%0A%0AYou%20can%20reach%20me%20at%20PHONE%20NUMBER%20HERE.%0A%0AThank%20you!" target="_blank"><button class='btn btn-large primary-color'>Sign up via Email!</button></a>
-                  <a href="https://loveseat-web-app-demo.herokuapp.com/?utf8=%E2%9C%93&start_date=2021-03-01&end_date=2021-07-01" target="_blank"><button class='btn btn-large primary-color'>View our Demo!</button></a>
+                <div class="card-action">
+                  <form id="contact-form">
+                    <div class="input-field col s6">
+                      <label for="name">Name</label>
+                      <input type="text" name="name" required>
+                    </div>
+                    <div class="input-field col s6">
+                      <label for="email">Email</label>
+                      <input type="email" name="email" required>
+                    </div>
+                    <div class="input-field col s6">
+                      <label for="storeName">Store Name</label>
+                      <input type="text" name="storeName" required>
+                    </div>
+                    <div class="input-field col s6">
+                      <label for="numStores">Number of Stores</label>
+                      <input type="text" name="numStores" required>
+                    </div>
+                    <button class="btn primary-color" type="submit" name="button">Submit</button>
+                  </form>
                 </div>
               </div>
             </div>
