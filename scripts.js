@@ -32,6 +32,6 @@ $(document).ready(function(){
   });
 
   function postLead(data) {
-    $.post("http://localhost:30000/leads", data)
+    $.post("http://localhost:3000/leads", data)
   }
 });
