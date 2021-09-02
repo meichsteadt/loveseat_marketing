@@ -1,6 +1,8 @@
 $(document).ready(function(){
   $('.sidenav').sidenav();
-
+  $('.tabs').tabs();
+   $('.tooltipped').tooltip();
+   
   $("#contact-form").on('submit', function(event) {
     event.preventDefault();
     var email = $('form input[name=email]').val();
@@ -22,6 +24,6 @@ $(document).ready(function(){
   });
 
   function postLead(data) {
-    $.post("http://localhost:3000/leads", data)
+    $.post("https://loveseat.co/leads", data)
   }
 });

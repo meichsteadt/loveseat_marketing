@@ -40,26 +40,44 @@ nav .logo {
   float: left;
 }
 
-/* line 40, ../sass/screen.scss */
-#splash, #beta {
+/* line 41, ../sass/screen.scss */
+#product .card:not(.with-box) {
+  box-shadow: none !important;
+}
+/* line 45, ../sass/screen.scss */
+#product .tabs .tab a {
+  color: #0c2556;
+  background-color: #fff !important;
+}
+/* line 50, ../sass/screen.scss */
+#product .indicator {
+  background-color: #123883 !important;
+}
+
+/* line 56, ../sass/screen.scss */
+section {
   width: 100vw;
   min-height: calc(100vh);
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* line 66, ../sass/screen.scss */
+#splash, #why-us, #contact {
   color: #fff;
+}
+/* line 68, ../sass/screen.scss */
+#splash .container, #why-us .container, #contact .container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-/* line 50, ../sass/screen.scss */
-#splash .container, #beta .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-/* line 57, ../sass/screen.scss */
-#splash .bg, #beta .bg {
+/* line 75, ../sass/screen.scss */
+#splash .bg, #why-us .bg, #contact .bg {
   background-image: url("../splash2.jpg");
   background-size: cover;
   background-position: center center;
@@ -70,70 +88,108 @@ nav .logo {
   left: 0;
   z-index: -2;
 }
-/* line 70, ../sass/screen.scss */
-#splash h3, #beta h3 {
+/* line 88, ../sass/screen.scss */
+#splash h3, #why-us h3, #contact h3 {
   color: #a3a3a3;
   font-size: 1.5em;
 }
-/* line 75, ../sass/screen.scss */
-#splash .demo-img, #beta .demo-img {
+/* line 93, ../sass/screen.scss */
+#splash .demo-img, #why-us .demo-img, #contact .demo-img {
   align-self: center;
   justify-self: center;
   text-align: center;
 }
-/* line 81, ../sass/screen.scss */
-#splash .demo-img .img-wrapper, #beta .demo-img .img-wrapper {
+/* line 99, ../sass/screen.scss */
+#splash .demo-img .img-wrapper, #why-us .demo-img .img-wrapper, #contact .demo-img .img-wrapper {
   width: 100%;
   text-align: center;
   margin: 0 auto;
   padding: 20px;
 }
-/* line 87, ../sass/screen.scss */
-#splash .demo-img .img-wrapper img, #beta .demo-img .img-wrapper img {
+/* line 105, ../sass/screen.scss */
+#splash .demo-img .img-wrapper img, #why-us .demo-img .img-wrapper img, #contact .demo-img .img-wrapper img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
 }
 
-/* line 96, ../sass/screen.scss */
-#beta {
+/* line 116, ../sass/screen.scss */
+#why-us li {
+  font-size: 1.15em;
+  margin: 10px 0;
+}
+
+/* line 122, ../sass/screen.scss */
+#why-us, #contact {
   color: #333;
 }
-/* line 99, ../sass/screen.scss */
-#beta .bg {
-  background-image: url("../store.jpeg");
-}
-/* line 104, ../sass/screen.scss */
-#beta .card .card-title {
+/* line 126, ../sass/screen.scss */
+#why-us .card .card-title, #contact .card .card-title {
   font-size: 3em;
 }
-/* line 108, ../sass/screen.scss */
-#beta .card p {
+/* line 130, ../sass/screen.scss */
+#why-us .card p, #contact .card p {
   font-size: 1.2em;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
+#why-us .bg {
+  background-image: url("../store.jpg");
+  filter: brightness(55%);
+}
+
+/* line 144, ../sass/screen.scss */
+#contact .bg {
+  background-image: url("../store.jpeg");
+  filter: brightness(55%);
+}
+
+/* line 150, ../sass/screen.scss */
 #about-us {
   min-height: 0px;
+  background-color: #fafafa;
 }
-/* line 117, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 #about-us .col {
   padding: 20px;
 }
-/* line 125, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 #about-us p {
   text-align: justify;
 }
-/* line 129, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 #about-us img {
   width: 200px;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 .primary-color {
   background-color: #0c2556;
 }
-/* line 138, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .primary-color:hover, .primary-color:active, .primary-color:focus {
   background-color: #123883;
+}
+
+/* line 180, ../sass/screen.scss */
+.primary-color-inverse {
+  background-color: #fff;
+  color: #0c2556;
+  border: 2px solid;
+  border-color: #0c2556;
+}
+/* line 186, ../sass/screen.scss */
+.primary-color-inverse:hover, .primary-color-inverse:active, .primary-color-inverse:focus {
+  background-color: #e6e6e6;
+}
+
+/* line 191, ../sass/screen.scss */
+i {
+  vertical-align: middle;
+}
+
+/* line 195, ../sass/screen.scss */
+blockquote {
+  border-color: #0c2556;
+  font-size: 1.5em;
 }

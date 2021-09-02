@@ -28,7 +28,8 @@
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="#product">Product</a></li>
-            <li><a href="#beta">Beta Program</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#why-us">Why LoveSeat?</a></li>
             <li><a href="#about-us">About Us</a></li>
           </ul>
         </div>
@@ -37,7 +38,8 @@
 
     <ul class="sidenav" id="mobile-demo">
       <li><a href="#product">Product</a></li>
-      <li><a href="#beta">Beta Program</a></li>
+      <li><a href="#contact">contact</a></li>
+      <li><a href="#why-us">Why LoveSeat?</a></li>
       <li><a href="#about-us">About Us</a></li>
     </ul>
 
@@ -52,9 +54,10 @@
           <div class="row valign-wrapper">
             <div class="col m12 l4">
               <h1>Built for independent furniture stores</h1>
-              <h3>We're building software so independent store owners can save time and grow their business</h3>
+              <h3>P.O.S and Inventory Management to save you time, improve your customer experience, and grow your business!</h3>
 
-              <a href="#beta"><button class='btn btn-large primary-color'>Join Our Beta Program!</button></a>
+              <a href="#contact"><button class='btn btn-large primary-color waves-effect waves-light'>Get a demo</button></a>
+              <a href="#pricing"><button class='btn btn-large primary-color-inverse waves-effect waves-dark'>See pricing</button></a>
 
             </div>
 
@@ -71,95 +74,251 @@
       <!-- ===============================   Product  =============================== -->
       <section id="product" class="valign-wrapper">
         <div class="container">
-          <h1>What we're building</h1>
+          <h1>What we do</h1>
           <hr>
-          <div class="row valign-wrapper">
-            <div class="col m12 l6 center-align hide-on-med-and-down">
-              <img src="./product_info.png" alt="" class="responsive-img">
-            </div>
-            <div class="col m12 l6">
-              <div class="col s12">
-                <div class="card">
-                  <div class="card-content">
-                    <span class="card-title">Point of Sale <span class="material-icons">point_of_sale</span></span>
-                    <hr>
-                    <p>Cloud software to use from your desktop; manage orders, print invoices, track customers and sales</p>
-                  </div>
-                  <div class="card-action">
-                  </div>
-                </div>
-              </div>
-              <div class="col s12">
-                <div class="card">
-                  <div class="card-content">
-                    <span class="card-title">Inventory Management <span class="material-icons">weekend</span></span>
-                    <hr>
-                    <p>No more running to the warehouse to check what's in stock! Sell in-stock items, or create purchase orders in seconds</p>
-                  </div>
-                  <div class="card-action">
-                  </div>
-                </div>
-              </div>
-              <div class="col s12">
-                <div class="card">
-                  <div class="card-content">
-                    <span class="card-title">E-commerce <span class="material-icons">shopping_cart</span></span>
-                    <hr>
-                    <p>Today's owners are expected to be experts in e-commerce, digital marketing, and a million other things. Let us handle the digital, and you can get back to running your store.</p>
-                    <br>
-                    <p>Since it's completely connected to the rest of your system it's a cinch to keep updated.</p>
-                  </div>
-                  <div class="card-action">
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="row">
+            <div class="col m6">
 
+            </div>
+            <div class="col s12">
+              <ul class="tabs">
+                <li class="tab col s4"><a href="#pos">Point of Sale</a></li>
+                <li class="tab col s4"><a href="#inventory">Inventory Management</a></li>
+                <li class="tab col s4"><a href="#data-reporting">Data and Reporting</a></li>
+              </ul>
+              <br>
+            </div>
+            <div id="pos" class="col s12">
+              <div class="col m6">
+                <div class="card">
+                  <div class="card-content">
+                    <span class="card-title">Point of Sale <i class="material-icons center">point_of_sale</i></span>
+                    <hr>
+                    <p><strong>Quickly access customer's order info</strong>. No need to search for a paper invoice when they call looking for an update</p>
+                    <br>
+                    <p><strong>Provide the experience customers expect</strong>. With email invoicing</p>
+                    <br>
+                    <p><strong>Easily manage deliveries and pickups</strong>. With scheduling</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col m6">
+                <div class="card with-box">
+                  <img src="pos.gif" alt="" class="responsive-img">
+                </div>
+              </div>
+            </div>
+            <div id="inventory" class="col s12">
+              <div class="col m6">
+                <div class="card">
+                  <div class="card-content">
+                    <span class="card-title">Inventory Management <i class="material-icons center">weekend</i></span>
+                    <hr>
+                    <p><strong>Don't leave your customers waiting while you check what's in stock!</strong>
+                      <br>
+                      Instantly check on the status of your products with inventory management and close the sale quickly.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col m6">
+                <div class="card with-box">
+                  <img src="inventory.png" alt="" class="responsive-img">
+                </div>
+              </div>
+            </div>
+            <div id="data-reporting" class="col s12">
+              <div class="col m6">
+                <div class="card">
+                  <div class="card-content">
+                    <span class="card-title">Data and Reporting <i class="material-icons center">analytics</i></span>
+                    <hr>
+                    <p><strong>Take a day off!</strong> Stay up to date with real time updates on store sales</p>
+                    <br>
+                    <p><strong>Make better business decisions</strong>. With visibility into your most top selling products, most profitable customers, and gross margins</p>
+                    <br>
+                    <p><strong>Sell more to your existing customers</strong>. A complete database of your customers order history, phone and email enabling you to contact with promotions relevant to them</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col m6">
+                <div class="card with-box">
+                  <img src="data.png" alt="" class="responsive-img">
+                </div>
+              </div>
+            </div>
           </div>
         </div> <!-- End container -->
       </section>
       <!-- ===============================  End Product  =============================== -->
 
-      <!-- ===============================   Beta  =============================== -->
-      <section id="beta">
+      <!-- ===============================   Contact  =============================== -->
+      <section id="contact">
         <div class="bg"></div>
         <div class="container">
           <div class="row valign-wrapper">
-            <div class="col m12 l6 offset-l3">
+            <div class="col m12 l8 offset-l2">
               <div class="card">
                 <div class="card-content">
                   <span class="card-title">Reach out!</span>
                   <hr>
-                  <p>The Beta version of LoveSeat is now live. We are seeking 4-5 more furniture stores to include in the Beta Trial. Trial participants receive access to a software solution designed specifically to save owner operators of furniture stores time and effort. In return, you will provide regular feedback to our team on your customer experience. Your feedback will inform the features and design of future versions of LoveSeat.</p>
-                </div>
-                <div class="card-action">
-                  <form id="contact-form">
-                    <div class="input-field col s6">
-                      <label for="name">Name</label>
-                      <input type="text" name="name" required>
-                    </div>
-                    <div class="input-field col s6">
-                      <label for="email">Email</label>
-                      <input type="email" name="email" required>
-                    </div>
-                    <div class="input-field col s6">
-                      <label for="storeName">Store Name</label>
-                      <input type="text" name="storeName" required>
-                    </div>
-                    <div class="input-field col s6">
-                      <label for="numStores">Number of Stores</label>
-                      <input type="text" name="numStores" required>
-                    </div>
-                    <button class="btn primary-color" type="submit" name="button">Submit</button>
-                  </form>
+                  <p>- Want to know more?
+                    <br>
+                    - Looking for a demo?
+                    <br>
+                    <br>
+                    We're always happy to talk! Even if you're just browsing we love talking to customers and looking for new ways to help stores grow and succeed. Just fill out the form below and we'll get back to you ASAP!</p>
+                    <br>
+
+                    <form id="contact-form">
+                      <div class="input-field col s6">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" required>
+                      </div>
+                      <div class="input-field col s6">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required>
+                      </div>
+                      <div class="input-field col s6">
+                        <label for="storeName">Store Name</label>
+                        <input type="text" name="storeName" required>
+                      </div>
+                      <div class="input-field col s6">
+                        <label for="numStores">Number of Stores</label>
+                        <input type="text" name="numStores" required>
+                      </div>
+                      <button class="btn primary-color" type="submit" name="button">Get in touch</button>
+                    </form>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- ===============================  End Beta  =============================== -->
+      <!-- ===============================  End Contact  =============================== -->
 
+      <!-- ===============================   Pricing  =============================== -->
+      <section id="pricing">
+        <!-- <div class="bg"></div> -->
+        <div class="container">
+          <div class="row valign">
+            <div class="col l12 m12">
+              <h2>Pricing</h2>
+              <hr>
+              <table class="striped responsive-table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>
+                      Digital
+                      <br>
+                      <span class="lowlight">$35/mo</span>
+                    </th>
+                    <th>
+                      Growth
+                      <br>
+                      <span class="lowlight">$75/mo</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Point of Sale <i class="material-icons tooltipped center" data-position="top" data-tooltip="Cloud-based POS allowing you to go digital">info_outline</i></td>
+                    <td><i class="material-icons">check</i></td>
+                    <td><i class="material-icons">check</i></td>
+                  </tr>
+                  <tr>
+                    <td>Data and Reporting <i class="material-icons tooltipped center" data-position="top" data-tooltip="Run more efficiently with easy-to-understand analytics & reporting">info_outline</i></td>
+                    <td><i class="material-icons">check</i></td>
+                    <td><i class="material-icons">check</i></td>
+                  </tr>
+                  <tr>
+                    <td>Digital Catalogs  <i class="material-icons tooltipped center" data-position="top" data-tooltip="Access to leading manufacturers' catalogs, pre-loaded into your POS">info_outline</i></td>
+                    <td><i class="material-icons">check</i></td>
+                    <td><i class="material-icons">check</i></td>
+                  </tr>
+                  <tr>
+                    <td>Inventory Management  <i class="material-icons tooltipped center" data-position="top" data-tooltip="Keep track of products across multiple locations">info_outline</i></td>
+                    <td></td>
+                    <td><i class="material-icons">check</i></td>
+                  </tr>
+                  <tr>
+                    <td>Stock taking  <i class="material-icons tooltipped center" data-position="top" data-tooltip="We'll come to your warehouse and write down everything you have in there">info_outline</i></td>
+                    <td></td>
+                    <td><i class="material-icons">check</i></td>
+                  </tr>
+                  <tr>
+                    <td>E-commerce  <i class="material-icons tooltipped center" data-position="top" data-tooltip="Get a beautiful website and start selling online!">info_outline</i></td>
+                    <td>+$75/month</td>
+                    <td>+$75/month</td>
+                  </tr>
+
+                </tbody>
+
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===============================  End Pricing  =============================== -->
+
+      <!-- ===============================   Why LoveSeat  =============================== -->
+      <section id="why-us">
+        <div class="bg"></div>
+        <div class="container">
+          <div class="card">
+            <div class="card-content">
+              <h4 class="card-title">Why LoveSeat?</h4>
+              <hr>
+              <div class="row">
+                <div class="col m5">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <th>
+                          Easy to use
+                        </td>
+                        <td>
+                          Simple, modern UI makes it easy to learn and a breeze to use
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          Stock take
+                        </td>
+                        <td>
+                          We'll go to your store and take full inventory of everything you have
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          Dedicated Support
+                        </td>
+                        <td>
+                          You'll have direct access to the founders of the company. We even run training sessions for you and your staff (in-person or remote)
+                        </td>
+                      </tr>
+                      <tr>
+                        <th>
+                          Transparent  pricing
+                        </td>
+                        <td>
+                          We won't nickel and dime you on training, support, or licenses
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+                <div class="col m6 offset-m1">
+                  <blockquote>"We were so surprised to see what exactly what our margins were across different brands and different products. It helped us clean up our lineup and get rid of poor performing products"</blockquote>
+                  <p><em>Home Styles Furniture, Stockton CA</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===============================  End Why LoveSeat  =============================== -->
 
       <!-- ===============================   About Us  =============================== -->
       <section id="about-us">
@@ -185,7 +344,7 @@
           </div>
         </div>
       </section>
-      <!-- ===============================  End Beta  =============================== -->
+      <!-- ===============================  End About Us  =============================== -->
     </main>
   </body>
 </html>
