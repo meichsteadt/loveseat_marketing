@@ -1,14 +1,15 @@
 $(document).ready(function(){
   $('.sidenav').sidenav();
   $('.tabs').tabs();
-   $('.tooltipped').tooltip();
-
+  $('.tooltipped').tooltip();
+  M.textareaAutoResize($('textarea'));
   $("#contact-form").on('submit', function(event) {
     event.preventDefault();
     var email = $('form input[name=email]').val();
     var name = $('form input[name=name]').val();
     var storeName = $('form input[name=storeName]').val();
     var numStores = $('form input[name=numStores]').val();
+    var message = $('form textarea[name=message]').val();
     var allInterests = $('form input[type=checkbox]').map(function() {return this.name}).get();
     var interestData = {};
     allInterests.forEach(function(int) { interestData[int] = false;})
@@ -22,6 +23,7 @@ $(document).ready(function(){
         "name": name,
         "store_name": storeName,
         "num_stores": numStores,
+        "message": message,
         "interests": interestData,
       }
     }
@@ -32,6 +34,6 @@ $(document).ready(function(){
   });
 
   function postLead(data) {
-    $.post("http://localhost:3000/leads", data)
+    $.post("https://loveseat.co/leads", data)
   }
 });
