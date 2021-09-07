@@ -34,6 +34,6 @@ $(document).ready(function(){
   });
 
   function postLead(data) {
-    $.post("https://loveseat.co/leads", data)
+    $.post("https://www.loveseat.co/leads", data)
   }
 });
